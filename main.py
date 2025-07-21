@@ -4,6 +4,7 @@ import musiclibrary
 import webbrowser
 import requests
 
+
 # Initialize the recognizer and TTS engine
 recognizer = sr.Recognizer()
 engine = pyttsx3.init()
@@ -16,8 +17,8 @@ def speak(text):
 
     # News function
 def get_news():
-    api_key = "7b781710553a4f20ab9164d56daaf63c"  
-    url= requests.get("https://newsapi.org/v2/top-headlines?country=us&apiKey=7b781710553a4f20ab9164d56daaf63c")
+    api_key = ""  
+    url= requests.get("https://newsapi.org/v2/top-headlines?country=us&apiKey=")
 
     try:
         response = requests.get(url)
